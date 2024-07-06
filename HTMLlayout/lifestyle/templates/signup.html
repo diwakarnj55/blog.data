@@ -1,0 +1,16 @@
+{% extends 'theme.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+<main class="tm-main">
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button class="btn btn-success" style="margin-top: 20px;">Signup</button>
+    </form>
+  </div>
+  </main>
+  </div>
+{% endblock %}

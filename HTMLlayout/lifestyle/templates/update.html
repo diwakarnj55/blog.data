@@ -1,0 +1,32 @@
+{% extends 'theme.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <main class="tm-main">
+<div class="container">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<form action="" class="mb-5 tm-comment-form">
+    <h2 class="tm-color-primary tm-post-title mb-4">Write a News</h2>
+    <div class="mb-4">
+        {{form.app_name}}
+    </div>
+    <div class="mb-4">
+        {{form.app_contant}}
+    </div>
+    <div class="mb-4">
+        {{form.app_image}}
+    </div>
+    <div class="mp-4">
+        {{form.app_date}}
+    </div>
+    <div class="text-right">
+        <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>                        
+    </div> 
+</form>                               
+</form>  
+</div>    
+    </main>
+    </div>
+{% endblock %}           
